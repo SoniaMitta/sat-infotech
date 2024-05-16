@@ -8,10 +8,15 @@
   "dependencies": {
     "@cap-js/postgres": "^1.7.0",
     "@sap/cds": "^7",
-    "express": "^4"
+    "@sap/xssec": "^3.6.1",
+    "express": "^4",
+    "mbt": "^1.2.27",
+    "passport": "^0"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^1.6.0"
+    "@cap-js/sqlite": "^1.6.0",
+    "@sap/cds-dk": "^7",
+    "@sap/ux-specification": "^1.120.10"
   },
   "scripts": {
     "start": "cds-serve"
@@ -29,7 +34,11 @@
             "database": "postgres"
           }
         }
-      }
+      },
+      "auth": "xsuaa"
     }
-  }
+  },
+  "sapux": [
+    "app/kitchen"
+  ]
 }
